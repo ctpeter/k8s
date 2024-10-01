@@ -10,5 +10,5 @@ Manual deployment
 helm upgrade --install angkas ./angkas \
         --set image.repository=registry.gitlab.com/<repo-name>/<image-name> \
         --set image.tag=<tag> \
-        --namespace <namespace>
+        --namespace <namespace> --create-namespace
 ```
