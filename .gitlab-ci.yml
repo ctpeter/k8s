@@ -20,6 +20,6 @@ deploy:
     - helm upgrade --install angkas ./angkas \
         --set image.repository=registry.gitlab.com/peter-cipriano/angkas \
         --set image.tag=${CI_COMMIT_SHA} \
-        --namespace $KUBE_NAMESPACE
+        --namespace $KUBE_NAMESPACE --create-namespace
   only:
     - main
